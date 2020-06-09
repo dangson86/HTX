@@ -1,8 +1,32 @@
 {
     "version": "2.0.0",
-    "tasks": [],
-    "command": "tsc",
-    "args": [
-        "${workspaceRoot}\\node_modules\\typescript\\bin\\tsc"
-    ]
+    "tasks": [
+        {
+            "type": "npm",
+            "script": "main-api",
+            "path": "server/",
+            "problemMatcher": [],
+            "label": "run server api",
+            "detail": "nodemon main_api/app.ts"
+        },
+        {
+            "type": "npm",
+            "script": "start",
+            "path": "web_ui/HTX/",
+            "problemMatcher": [],
+            "label": "run web ui",
+            "detail": "ng serve"
+        },
+        {
+            "label": "run dev",
+            "dependsOn": [
+                "run server api",
+                "run web ui"
+            ],
+            "problemMatcher": [],
+            "runOptions": {
+                "runOn": "folderOpen",
+            }
+        }
+    ],
 }
