@@ -1,0 +1,23 @@
+{
+  "name": "htx",
+  "version": "1.0.0",
+  "description": "nodeserver",
+  "main": "index.js",
+  "scripts": {
+    "main-api": "nodemon server/main_api/app.ts",
+    "build": "tsc",
+    "start": "node dist/server/main_api/app.js"
+  },
+  "author": "Son Dang",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/node": "^14.0.12",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  }
+}
