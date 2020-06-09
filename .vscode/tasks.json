@@ -1,0 +1,8 @@
+{
+    "version": "2.0.0",
+    "tasks": [],
+    "command": "tsc",
+    "args": [
+        "${workspaceRoot}\\node_modules\\typescript\\bin\\tsc"
+    ]
+}

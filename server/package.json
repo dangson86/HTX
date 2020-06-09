@@ -4,9 +4,9 @@
   "description": "nodeserver",
   "main": "index.js",
   "scripts": {
-    "main-api": "nodemon server/main_api/app.ts",
+    "main-api": "nodemon main_api/app.ts",
     "build": "tsc",
-    "start": "node dist/server/main_api/app.js"
+    "start": "node dist/main_api/app.js"
   },
   "author": "Son Dang",
   "license": "ISC",
